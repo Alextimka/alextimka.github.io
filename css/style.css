@@ -4,6 +4,53 @@ html, body {
 	width: 100%;
 	height: 100%;
 }
+* {
+	font-family: Consolas, 'Courier New', monospace;
+	color: white;
+}
 body {
 	background-color: #1b1b1b;
+}
+#header {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	position: static;
+	background-color: #2b2b2b;
+	display: block;
+}
+#main {
+	display: block;
+	height: calc(100% - 150px);
+}
+#footer {
+	display: block;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	position: static;
+	background-color: #2b2b2b;
+}
+
+.btn {
+	width: 150px;
+	height: 50px;
+	background-color: #424242;
+	border-radius: .75rem;
+	color: white;
+	text-align: center;
+	display:inline-block;
+}
+.btn > p {
+	margin: 0;
+	padding: 0;
+	line-height: 46px; 
+	font-size: 20px;
+	transition: 0.1s;
+	cursor: pointer;
+	user-select: none;
+	color: #a5ddef;
+}
+.btn > p:hover {
+	color: #c88f5c;
 }
