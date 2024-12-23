@@ -54,3 +54,11 @@ body {
 .btn > p:hover {
 	color: #c88f5c;
 }
+#socials > a > svg {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+  font-size: inherit;
+  overflow: visible;
+  fill: currentColor;
+}
