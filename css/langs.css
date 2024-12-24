@@ -13,5 +13,8 @@
 	content: '\E01D';
 	background-image: unset;
 }
-
-
+.png-ext-file-icon::before {
+	color: #a074c4;
+	content: '\E04C';
+	background-image: unset;
+}

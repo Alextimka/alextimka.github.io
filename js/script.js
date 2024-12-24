@@ -1,6 +1,12 @@
-// it's time for awful programmin
-let tabList = ["tabAbout", "tabProjects"];
-let activeTab = "tabAbout";
+// it's time for awful programming without comments
+// except these two, I guess
+let tabList = ["tabAbout", "tabProjects", "tabPhotos"];
+if (localStorage.getItem("currentTab") == null){
+	localStorage.setItem("currentTab", "tabAbout");
+}
+let activeTab = localStorage.getItem("currentTab");
+document.getElementById(activeTab).className += " selected";
+document.getElementById(activeTab+"Content").hidden = false;
 let tabs = document.getElementsByClassName("tab");
 
 
@@ -10,10 +16,9 @@ for(let i = 0;i<tabs.length;i++){
 		let active = document.getElementById(activeTab);
 		active.className = active.className.slice(0,-9);
 		document.getElementById(activeTab+"Content").hidden = true;
-
 		event.target.className += " selected";
 		activeTab = event.target.id;
+		localStorage.setItem("currentTab", activeTab);
 		document.getElementById(activeTab+"Content").hidden = false;
 	});
 };
-// okay the code turned out to be pretty small

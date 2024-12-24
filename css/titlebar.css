@@ -3,9 +3,6 @@
 	src: url('../src/fonts/codicon.ttf')
 }
 
-::marker { 
-	content: "";
-}
 .titlebar {
 	height: 35px;
 	width: 100%;
@@ -100,24 +97,4 @@
 	user-select: none;
 	-webkit-user-select: none;
 }
-/* .titlebar-left {
-	flex-grow: 2;
-	justify-content: flex-start;
-	order: 0;
-	width: 20%;
-} */
-/* .titlebar {
-	align-items: center;
-	box-sizing: border-box;
-	display: flex;
-	flex-grow: 1;
-	flex-shrink: 1;
-	height: 100%;
-	justify-content: space-between;
-	overflow: hidden;
-	user-select: none;
-	-webkit-user-select: none;
-	width: 100%;
-	justify-content: left;
-	line-height: 22px;
-} */
+/* .titlebar-end */
