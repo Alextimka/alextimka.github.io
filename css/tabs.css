@@ -29,6 +29,7 @@
 	height:34px;
 	position: relative;
 	white-space: nowrap;
+	transition: 0.05s;
 }
 .tab:hover {
 	background-color: #1f1f1f;
