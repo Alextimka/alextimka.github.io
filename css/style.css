@@ -1,25 +1,21 @@
 html, body {
 	padding: 0;
 	margin: 0;
-	width: 100%;
-	height: 100%;
-}
-* {
-	font-family: Consolas, 'Courier New', monospace;
 }
 body {
+	font-family: Consolas, 'Courier New', monospace;
 	zoom: 1.2;
 	background-color: #1f1f1f;
 }
 
-#main-content {
+.main-content {
 	width: 100%;
 	height: fit-content;
 	position: relative;
 	top: 71px;
 	color:#fff;
 }
-#main {
+.main {
 	width:calc(100% - 48px);
 	left: 48px;
 	height: 100%;
@@ -35,56 +31,30 @@ body {
 	border-top: solid 1px #2b2b2b;
 }
 
-.btn.active {
-	background-color: #1f1f1f;
-}
-.btn.active > p {
-	color: #fffff1;
-}
-.btn {
-	border-right: 1px solid #2b2b2b;
-	min-width: fit-content;
-	width: 120px;
-	height: 35px;
-	padding-left: 10px;
-	background-color: #181818;
-	text-align: center;
-	display:inline-block;
-	margin-right: -8px;
-}
-.tab-actions {
-	margin-bottom: auto;
-	margin-top: auto;
-	width: 28px;
-}
-.btn > p {
-	margin: 0;
-	padding: 0;
-	line-height: 35px; 
-	font-size: 13px;
-	transition: 0.1s;
-	cursor: pointer;
-	user-select: none;
-	color: #9d9d9d;
-}
-#sidebar {
+.sidebar {
+	display: flex;
+	flex-direction: column;
 	width: 48px;
+	top: 36px;
 	left: 0;
 	height: 100%;
 	position: fixed;
 	background-color: #181818;
 	border-color: #2b2b2b;
 	border-width: 1px;
+	gap: 0;
 }
 .social-icon {
-	width: 18px;
-	height: 18px;
+	width: 30px;
+	height: 30px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: contain;
-	top: 3px;
+	left: 9px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-#socials {
+.socials {
 	display: inline-flex;
 	gap:4px;
 	position: absolute;

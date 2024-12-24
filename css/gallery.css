@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'codicon';
+	src: url('../src/fonts/codicon.ttf')
+}
+
+#gallery {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 50px;
+	position: relative;
+	background-color: #00000060;
+	border-radius: 20px;
+	/* font-size:30px; */
+	font: normal normal normal 30px / 1 codicon;
+	user-select: none;
+	color: #ffffffac;
+	transition: background-image 0.2s ease-in-out;
+}
+#gallery > span {
+	line-height: 600px;
+	position: absolute;
+	height: 100%;
+	cursor: pointer;
+}
+#leftbtn {
+	left: 10px;
+}
+#rightbtn {
+	right: 10px;
+}

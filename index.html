@@ -7,63 +7,64 @@
 	<link rel="stylesheet" href="./css/tabs.css">
 	<link rel="stylesheet" href="./css/langs.css">
 	<link rel="stylesheet" href="./css/titlebar.css">
+	<link rel="stylesheet" href="./css/gallery.css">
+	<link rel="stylesheet" href="./css/projects.css">
 	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 <body>
 	<div class="titlebar">
-		<a class="icon"></a>
+		<div class="icon"></div>
 		<div class="titlebar-center">
-			<ul class="actions-container">
-				<li class="action-item command-center-quick-pick">
-					<span class="codicon codicon-search search-icon"></span>
-					<span class="search-label">alextimka.github.io</span>
-				</li>
-			</ul>
+			<span class="codicon search-icon"></span>
+			<span class="search-label">alextimka.github.io</span>
 		</div>
-		<div class="titlebar-end"></div>
 	</div>
-	<div id="sidebar"></div>
-	<div id="main">
-		<div class="tabs-container">
-			<div>
-				<div class="tab html-lang-file-icon tab-label" id="tabAbout">
-					<span>
-						<a class="label-name">aboutme.html</a>
-					</span>
-				</div>
-			</div>
-			<div>
-				<div class="tab javascript-lang-file-icon tab-label" id="tabProjects">
-					<span>
-						<a class="label-name">projects.js</a>
-					</span>
-				</div>
-			</div>
-			<div>
-				<div class="tab png-ext-file-icon tab-label" id="tabPhotos">
-					<span>
-						<a class="label-name">photos.png</a>
-					</span>
-				</div>
-			</div>
-		</div>
-		<div id="main-content">
-			<div class="content" id="tabAboutContent" hidden>tab1</div>
-			<div class="content" id="tabProjectsContent" hidden>
-				<span style="display:block;color:#a5ddfd;line-height: 50vh;text-align: center;font-size: 100px;">Not much huh?</span>
-			</div>
-			<div class="content" id="tabPhotosContent" hidden><a href="favicon.svg" download="test"><button type="button">Photos will go here</button></a></div>
+	<div class="sidebar">
+		<a title="Github"  target="_blank" href="https://github.com/Alextimka"><div class="social-icon" style="background-image: url(./src/socials/github.svg);"></div></a>
+		<a title="Bluesky"  target="_blank" href="https://bsky.app/profile/alextimka.bsky.social"><div class="social-icon" style="background-image: url(./src/socials/bluesky.svg);"></div></a>
 
+		<a title="Instagram" target="_blank" href="https://instagram.com/alextimka_"><div class="social-icon" style="background-image: url(./src/socials/instagram.svg);"></div></a>
+	</div>
+	<div class="main">
+		<div class="tabs-container">
+			<div class="tab html-lang-file-icon tab-label" id="tabAbout">
+				<a class="label-name">aboutme.html</a>
+			</div>
+			<div class="tab javascript-lang-file-icon tab-label" id="tabProjects">
+				<a class="label-name">projects.js</a>
+			</div>
+			<div class="tab png-ext-file-icon tab-label" id="tabPhotos">
+				<a class="label-name">gallery.png</a>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="content" id="tabAboutContent" hidden>Nothing for now...</div>
+			<div class="content" id="tabProjectsContent" hidden>
+				<div class="ghcard">
+					<div class="logo" style="background-image: url(./src/projects/Spectrum.png);"></div>
+					<div class="description">
+						<a style="display: flex; 
+       justify-content: center; color: #c085bf;margin-top: 10px; font-size: 20px; text-decoration: none;" href="https://github.com/Alextimka/Spectrum">Spectrum</a>
+						<br>
+						<span style="color: #a5ddfd;"><span style="color: #dbdbab">Spectrum</span> is a browser extension that improves the <a href="https://spectr39s.ru" style="color:#67c3fd; text-decoration: none;">spectr39s.ru</a> website</span>
+					</div>
+					<div class="links">
+						<a href="https://github.com/Alextimka/Spectrum/releases/latest/download/Spectrum.zip"><img src="https://img.shields.io/github/v/release/Alextimka/Spectrum?label=&style=flat&logo=github"></a>
+						<a><img src="https://img.shields.io/github/downloads/Alextimka/Spectrum/total?label=Downloads&color=red"></a>
+						<a href="https://addons.mozilla.org/en-GB/firefox/addon/spectrum39"><img src="https://img.shields.io/badge/Firefox%20-%20?style=flat&logo=firefoxbrowser&labelColor=%23595959&color=%23595959"></a>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="tabPhotosContent" hidden>
+				<div id="gallery">
+					<span id="leftbtn"></span>
+					<span id="rightbtn"></span>
+				</div>
+				<script src="./js/gallery.js"></script>
+			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div id="socials">
-			<a target="_blank" href="https://instagram.com/alextimka_"><div class="social-icon" style="background-image: url(./src/socials/instagram.svg);"></div></a>
-			<a target="_blank" href="https://bsky.app/profile/alextimka.bsky.social"><div class="social-icon" style="background-image: url(./src/socials/bluesky.svg);"></div></a>
-			<a href="mailto:alextimka007@gmail.com"><div class="social-icon" style="background-image: url(./src/socials/gmail.png);"></div></a>
-			<a target="_blank" href="https://github.com/Alextimka"><div class="social-icon" style="background-image: url(./src/socials/github.svg);"></div></a>
-		</div>
-	</div>
+	<div class="footer"><!-- it's useless --></div>
 	<script src="./js/script.js"></script>
 </body>
 </html>
