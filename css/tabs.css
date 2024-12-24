@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'seti';
+	src: url('../src/fonts/seti.ttf')
+}
+@font-face {
+	font-family: 'codicon';
+	src: url('../src/fonts/codicon.ttf')
+}
+
+.tabs-container {
+	display: flex;	
+	height: 35px;
+	scrollbar-width: none;
+	background-color: #181818;
+	position: fixed;
+	top:36px;
+	width:100%;
+	z-index: 999;
+}
+
+.tab {
+	left: auto;
+	border-right: 1px solid #2b2b2b;
+	color: #9d9d9d;
+	background-color: #181818;
+	min-width: fit-content;
+	width: 120px;
+	box-sizing: content-box;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	
+	cursor: pointer;
+	display: flex;
+	height:35px;
+	position: relative;
+	white-space: nowrap;
+}
+.tab:hover {
+	background-color: #1f1f1f;
+}
+.tab-label {
+	padding-left: 10px;
+	line-height: 35px;
+	margin-bottom: auto;
+	margin-top: auto;
+	display: flex;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex: 1;
+	white-space: nowrap !important;
+}
+.tab-label::before {
+	font-family: 'seti';
+	font-size: 120%;
+	background-position: 0;
+	background-repeat: no-repeat;
+	background-size: 16px;
+	display: inline-block;
+	height: 22px;
+	padding-right: 6px;
+	width: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	flex-shrink: 0;
+	height: 35px;
+}
+.tab-label>span {
+	pointer-events: none;
+}
+
+.label-name {
+	line-height: 25px;
+	font-size: 13px;
+	user-select: none
+}
+.selected {
+	border-top: 1px solid #0078d4;
+	border-bottom: 1px solid #1f1f1f;
+	color: #fff;
+	background-color: #1f1f1f;
+}

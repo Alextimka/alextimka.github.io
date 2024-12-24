@@ -1,0 +1,17 @@
+.javascript-lang-file-icon::before {
+	color: #cbcb41;
+	content: '\E051';
+	background-image: unset;
+}
+.html-lang-file-icon::before {
+	color: #e37933;
+	content: '\E048';
+	background-image: unset;
+}
+.css-lang-file-icon::before {
+	color: #519aba;
+	content: '\E01D';
+	background-image: unset;
+}
+
+

@@ -4,24 +4,54 @@
 	<meta charset="UTF-8">
 	<title>index</title>
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/tabs.css">
+	<link rel="stylesheet" href="./css/langs.css">
+	<link rel="stylesheet" href="./css/titlebar.css">
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 </head>
 <body>
-	<div id="titlebar"><a class="icon"></a></div>
+	<div class="titlebar">
+		<a class="icon"></a>
+		<div class="titlebar-center">
+			<ul class="actions-container">
+				<li class="action-item command-center-quick-pick">
+					<span class="codicon codicon-search search-icon"></span>
+					<span class="search-label">alextimka.github.io</span>
+				</li>
+			</ul>
+		</div>
+		<div class="titlebar-end"></div>
+	</div>
 	<div id="sidebar"></div>
 	<div id="main">
-		<div id="header">
-			<div id="about" class="btn"><p>about.html</p></div>
-			<div id="projects" class="btn active"><p>projects.html</p></div>
+		<div class="tabs-container">
+			<div class="tab">
+				<div class="clicktab html-lang-file-icon tab-label selected" id="tabAbout">
+					<span>
+						<a class="label-name">about.html</a>
+					</span>
+				</div>
+			</div>
+			<div class="tab">
+				<div class="clicktab javascript-lang-file-icon tab-label" id="tabProjects">
+					<span>
+						<a class="label-name">projects.js</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div id="main-content">
+			<div class="content" id="tabAboutContent">tab1</div>
+			<div class="content" id="tabProjectsContent" hidden>tab2</div>
 		</div>
 	</div>
-	<!-- <div id="footer">
+	<div class="footer">
 		<div id="socials">
 			<a href="https://bsky.app/profile/alextimka.bsky.social">
 				<svg><use href="/src/svg/social.svg#bluesky"></use></svg>
 			</a>
 		</div>
-	</div> -->
+	</div>
 	<script src="./js/script.js"></script>
 </body>
 </html>
