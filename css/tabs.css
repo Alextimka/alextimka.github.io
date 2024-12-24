@@ -12,6 +12,7 @@
 	height: 35px;
 	scrollbar-width: none;
 	background-color: #181818;
+	border-bottom: 1px solid #2b2b2b;
 	position: fixed;
 	top:36px;
 	width:100%;
@@ -25,13 +26,13 @@
 	background-color: #181818;
 	min-width: fit-content;
 	width: 120px;
-	box-sizing: content-box;
+	/* box-sizing: content-box; */
 	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid #2b2b2b;
 	
 	cursor: pointer;
 	display: flex;
-	height:35px;
+	height:34px;
 	position: relative;
 	white-space: nowrap;
 }
@@ -51,7 +52,7 @@
 }
 .tab-label::before {
 	font-family: 'seti';
-	font-size: 120%;
+	font-size: 150%;
 	background-position: 0;
 	background-repeat: no-repeat;
 	background-size: 16px;
@@ -71,7 +72,7 @@
 .label-name {
 	line-height: 25px;
 	font-size: 13px;
-	user-select: none
+	user-select: none;
 }
 .selected {
 	border-top: 1px solid #0078d4;

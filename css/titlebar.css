@@ -19,12 +19,13 @@
 	position: fixed;
 	top:0px;
 	z-index: 9999;
+	user-select: none;
 }
 .icon {
 	background-image: url(../favicon.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
-	background-size: 16px;
+	background-size: 20px;
 
 	flex-shrink: 0;
 	height: 100%;

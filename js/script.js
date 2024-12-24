@@ -1,7 +1,9 @@
 // it's time for awful programmin
 let tabList = ["tabAbout", "tabProjects"];
 let activeTab = "tabAbout";
-let tabs = document.getElementsByClassName("clicktab");
+let tabs = document.getElementsByClassName("tab");
+
+
 for(let i = 0;i<tabs.length;i++){
 	tabs[i].addEventListener("click",(event)=>{
 		if(event.target.id == activeTab) return
@@ -14,3 +16,4 @@ for(let i = 0;i<tabs.length;i++){
 		document.getElementById(activeTab+"Content").hidden = false;
 	});
 };
+// okay the code turned out to be pretty small
