@@ -7,6 +7,10 @@ document.getElementById(activeTab).className += " selected";
 document.getElementById(activeTab+"Content").hidden = false;
 let tabs = document.getElementsByClassName("tab");
 
+if (window.innerHeight > window.innerWidth) {
+	document.body.style = "zoom: 2"
+}
+
 
 for(let i = 0;i<tabs.length;i++){
 	tabs[i].addEventListener("click",(event)=>{
