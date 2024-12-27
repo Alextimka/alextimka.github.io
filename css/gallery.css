@@ -7,8 +7,8 @@
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	width:600px;
-	height: 600px;
+	width:30vw;
+	height: 30vw;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0;
@@ -22,7 +22,7 @@
 	color: #dddddd;
 }
 #gallery > span {
-	line-height: 600px;
+	line-height: 30vw;
 	position: absolute;
 	height: 100%;
 	cursor: pointer;
