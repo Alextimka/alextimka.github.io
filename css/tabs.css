@@ -6,7 +6,6 @@
 .tabs-container {
 	display: flex;	
 	height: 35px;
-	scrollbar-width: none;
 	background-color: #181818;
 	border-bottom: 1px solid #2b2b2b;
 	position: fixed;
@@ -16,7 +15,6 @@
 }
 
 .tab {
-	left: auto;
 	border-right: 1px solid #2b2b2b;
 	color: #9d9d9d;
 	background-color: #181818;
@@ -27,8 +25,6 @@
 	cursor: pointer;
 	display: flex;
 	height:34px;
-	position: relative;
-	white-space: nowrap;
 	transition: 0.05s;
 }
 .tab:hover {
@@ -41,22 +37,13 @@
 	margin-top: auto;
 	display: flex;
 	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap !important;
 }
 .tab-label::before {
 	font-family: 'seti';
 	font-size: 150%;
-	background-position: 0;
-	background-repeat: no-repeat;
-	background-size: 16px;
-	display: inline-block;
 	height: 22px;
 	padding-right: 6px;
 	width: 16px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	flex-shrink: 0;
 	height: 35px;
 }
 
