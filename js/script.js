@@ -9,7 +9,6 @@ let tabs = document.getElementsByClassName("tab");
 
 if (window.innerHeight > window.innerWidth) {
 	document.body.style = "zoom: 2";
-	// alert("True")
 }
 
 
