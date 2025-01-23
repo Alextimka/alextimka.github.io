@@ -1,4 +1,4 @@
-let tabList = ["tabAbout", "tabPhotos"];
+let tabList = ["tabPhotos"];
 if (localStorage.getItem("currentTab") == null){
 	localStorage.setItem("currentTab", "tabAbout");
 }
