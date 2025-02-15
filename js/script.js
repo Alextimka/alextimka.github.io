@@ -1,6 +1,6 @@
 let tabList = ["tabPhotos"];
 if (localStorage.getItem("currentTab") == null){
-	localStorage.setItem("currentTab", "tabAbout");
+	localStorage.setItem("currentTab", "tabGallery");
 }
 let activeTab = localStorage.getItem("currentTab");
 document.getElementById(activeTab).className += " selected";
