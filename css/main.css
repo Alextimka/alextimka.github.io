@@ -1,0 +1,13 @@
+html, 
+body {
+    height: 100%;
+}
+body {
+  background-color: linear-gradient(120deg, #3b0047, #470041);
+}
+main {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #181818;
+}
