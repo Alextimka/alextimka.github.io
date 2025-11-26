@@ -1,13 +1,45 @@
-html, 
-body {
-    height: 100%;
-}
-body {
-  background-color: linear-gradient(120deg, #3b0047, #470041);
-}
-main {
-  width: 60%;
+html, body {
   height: 100%;
+  margin: 0;
+}
+body {
+  background-image: linear-gradient(-25deg, #200026, #42003c);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  background-color: #181818c9;
+  min-width: fit-content;
+  width: 60%;
+  min-height: 100%;
+}
+#aboutTitle {
+  font-size: 2.3rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+}
+.card {
+  background-color: #202020;
+  width: 50rem;
   margin: 0 auto;
-  background-color: #181818;
+  min-height: 30rem;
+  border-radius: 2rem;
+}
+.avatar {
+  background-image: url("../src/avatar.jpg");
+  width: 20rem;
+  height: 20rem;
+  background-size: cover;
+  border-radius: 2rem;
 }
