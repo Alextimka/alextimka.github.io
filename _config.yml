@@ -1,1 +1,5 @@
-include: [".well-known"]
+title: About Me
+author:
+  name: Alexey T.
+  email: alextimka@duck.com
+description: "About Me"
